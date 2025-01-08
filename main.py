@@ -36,7 +36,7 @@ def getWeather():
 
     #weather(API services may be busy, so if the API isn't responding, try changing the number between "/data/" and "/onecall?" in the next line
     api="https://api.openweathermap.org/data/2.8/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+ \
-        "&units=metric&exclude=hourly&appid=0b502203e776f72228abfd2e1e17c0c3"
+        "&units=metric&exclude=hourly&appid={your API key}"
     json_data = requests.get(api).json()
 
 
